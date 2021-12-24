@@ -50,11 +50,11 @@ private:
     int newY;
     int moveType; // 0 - выход в точку; 1 - движение вдоль прямой
     int deepType; // 0 - на постоянной глубине; 1 - на постоянном отстоянии от дна
-    const int maxX = 5000;
-    const int minX = -5000;
-    const int maxY = 5000;
-    const int minY = -5000;
-    int moveAccuracy = 200; // точность выхода
+    const int maxX = 10000;
+    const int minX = 0;
+    const int maxY = 10000;
+    const int minY = 0;
+    int moveAccuracy = 5; // точность выхода
     std::string missionData;
 public:
     Move();
