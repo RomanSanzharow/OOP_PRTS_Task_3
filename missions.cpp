@@ -61,7 +61,7 @@ Move::Move(int newX, int newY, int moveType, int deepType)
         : newX(newX), newY(newY), moveType(moveType), deepType(deepType) {}
 
 bool Move::Run() {
-    if (newX + moveAccuracy < 5000 && newX + moveAccuracy > -5000) {
+    if (newX + moveAccuracy < 10000 && newX + moveAccuracy > 0) {
         return true;
     }
     return false;
